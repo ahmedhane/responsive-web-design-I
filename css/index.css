@@ -1,3 +1,439 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  text-decoration: none;
+  color: gray;
+  list-style: none;
+  align-items: center;
+}
+.link-items {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  /* border: 2px solid red; */
+  /* padding: 2%; */
+}
+nav a {
+  text-decoration: none;
+  color: dark gray;
+  /* border: 1px solid red; */
+  padding: 10px 20px;
+}
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: rgb(81, 88, 84);
+  /* padding: 0 20px 0 20px; */
+  padding: 10px 20px;
+}
+.cta {
+  display: flex;
+  justify-content: space-between;
+}
+.cta .cta-text {
+  /* display: inline-block; */
+  width: 50%;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 2%;
+  text-align: center;
+  /* padding: 0px 2%; */
+  /* border: 1px solid red; */
+}
+
+.cta .cta-text button {
+  background: white;
+  /* background: cyan; */
+  vertical-align: top;
+  margin-top: 20px;
+  padding: 18px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+.cta .header-img img {
+  /* display: inline-block; */
+  margin-top: 20px;
+  /* display: flex; */
+  /* position: relative; */
+  width: 95%;
+  margin-left: 100px;
+  /* align-items: center; */
+  /* border: 1px solid red; */
+}
+section.cta {
+  display: flex;
+  width: 90%;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  font-size: 120px;
+  text-align: center;
+  justify-content: center;
+}
+p {
+  font-size: 20px;
+}
+
+.title {
+  width: 45%;
+  text-align: center;
+}
+
+/* section img {
+  width: 50%;
+} */
+button {
+  justify-content: center;
+  align-items: center;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.mid-row {
+  display: flex;
+  flex-direction: column;
+}
+.features {
+  width: 45%;
+  /* text-align: left; */
+}
+col-2 {
+  padding-right: 1%;
+}
+col-3 {
+  padding-right: 1%;
+}
+.about {
+  width: 45%;
+}
+
+.middle-img {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.middle-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+  /* position: relative; */
+  font-size: 100%;
+}
+
+.contact p {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+}
+
+footer {
+  width: 95%;
+  /* padding-left: 3%; */
+  padding-bottom: 2%;
+}
+footer h3 {
+  font-size: 25px;
+  margin-top: 5%;
+}
+footer address {
+  font-size: 20px;
+  width: 20%;
+  line-height: 35px;
+}
+footer p {
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+  /* display: inline-block; */
+  font-size: 20px;
+}
+/* Services page CSS */
+
+/* Media Query */
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+  .container {
+    width: 800px;
+    /* background: gray; */
+  }
+
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    /* width: 500px; */
+    /* background-color: gray; */
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta .header-img {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a {
+    /* margin-bottom: 20px; */
+  }
+
+  .cta-text {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+  .top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+    /* text-align: left; */
+  }
+  .col-2 h3 {
+    text-align: center;
+  }
+  .col-3 h3 {
+    text-align: center;
+  }
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    text-align: center;
+  }
+  footer address {
+    text-align: center;
+    width: 100%;
+  }
+}
